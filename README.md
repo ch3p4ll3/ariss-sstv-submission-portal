@@ -4,6 +4,8 @@ An Angular 21 + Tailwind application for submitting SSTV (Slow Scan Television) 
 
 Built with a dark space/aerospace theme, the app provides a batch upload wizard, per-image metadata editing, campaign validation against ARISS mission windows, and a public gallery with infinite scroll.
 
+⚠️ **Note:** This is an unofficial, community-driven passion project built for experimentation and fun.
+
 ## Features
 
 - **Batch Upload Wizard** — 4-step flow: select, review, station details, confirm & submit
@@ -117,3 +119,6 @@ Custom colors defined in `src/styles.css` via `@theme {}`:
 - `neon-green` (#00ff88) — Success
 - `neon-amber` (#ffb224) — Warning
 - `neon-magenta` (#ff00aa) — Error/accent
+
+## Contributions
+Feedback, UI/UX critiques, and Pull Requests from seasoned frontend developers are highly welcome!
