@@ -1,6 +1,6 @@
 # ARISS SSTV Gallery
 
-A Angular 21 + Tailwind application for submitting SSTV (Slow Scan Television) images decoded from ARISS (Amateur Radio on the International Space Station) transmissions.
+An Angular 21 + Tailwind application for submitting SSTV (Slow Scan Television) images decoded from ARISS (Amateur Radio on the International Space Station) transmissions.
 
 Built with a dark space/aerospace theme, the app provides a batch upload wizard, per-image metadata editing, campaign validation against ARISS mission windows, and a public gallery with infinite scroll.
 
