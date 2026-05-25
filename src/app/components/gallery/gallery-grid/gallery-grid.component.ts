@@ -1,4 +1,4 @@
-import { Component, input, output, computed, ElementRef, viewChild, afterNextRender } from '@angular/core';
+import { Component, input, output, ElementRef, viewChild, afterNextRender } from '@angular/core';
 import { DatePipe } from '@angular/common';
 import { SstvSubmission } from '../../../models/sstv-submission.model';
 

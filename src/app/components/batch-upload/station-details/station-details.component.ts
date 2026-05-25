@@ -1,7 +1,7 @@
 import { Component, input, output, signal, computed, effect, inject, HostListener } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { OperatorProfile, CALLSIGN_PATTERN, GRID_SQUARE_PATTERN } from '../../../models/operator-profile.model';
-import { SignalReport, UploadFileEntry } from '../../../models/sstv-submission.model';
+import { SignalReport } from '../../../models/sstv-submission.model';
 import { OperatorStoreService } from '../../../services/operator-store.service';
 import { UploadService } from '../../../services/upload.service';
 import { MissionService } from '../../../services/mission.service';

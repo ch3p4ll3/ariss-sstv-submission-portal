@@ -1,5 +1,5 @@
 import { Injectable, signal, computed } from '@angular/core';
-import { UploadFileEntry, ChunkedUploadPayload, BatchSubmitPayload, UploadStatus } from '../models/sstv-submission.model';
+import { UploadFileEntry, ChunkedUploadPayload, BatchSubmitPayload } from '../models/sstv-submission.model';
 
 const CHUNK_SIZE = 512 * 1024;
 
@@ -117,7 +117,6 @@ export class UploadService {
 
   async uploadAll(): Promise<void> {
     const pending = this.#files().filter(f => f.status === 'pending');
-    console.log(pending);
     await Promise.all(pending.map(f => this.uploadFile(f)));
   }
 

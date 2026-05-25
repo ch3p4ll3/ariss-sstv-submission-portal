@@ -1,7 +1,7 @@
 import { Component, input, output, computed } from '@angular/core';
 import { UploadFileEntry } from '../../../models/sstv-submission.model';
 import { ProgressBarComponent } from '../../shared/progress-bar/progress-bar.component';
-import { ValidationBadgeComponent, ValidationLevel } from '../../shared/validation-badge/validation-badge.component';
+import { ValidationBadgeComponent } from '../../shared/validation-badge/validation-badge.component';
 
 @Component({
   selector: 'app-image-preview-card',

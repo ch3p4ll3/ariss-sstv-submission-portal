@@ -9,11 +9,4 @@ export interface ArissMission {
   isActive: boolean;
 }
 
-export interface IssPassPrediction {
-  missionId: string;
-  gridSquare: string;
-  aosUtc: string;
-  losUtc: string;
-  maxElevation: number;
-  durationSeconds: number;
-}
+

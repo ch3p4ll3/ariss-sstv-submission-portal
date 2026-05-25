@@ -7,10 +7,6 @@ export class OperatorStoreService {
 
   readonly profile = this.#profile.asReadonly();
   readonly hasProfile = computed(() => !!this.#profile().callsign);
-  readonly displayName = computed(() => {
-    const p = this.#profile();
-    return p.callsign ? `${p.callsign} — ${p.name}` : 'Not set';
-  });
 
   constructor() {
     effect(() => {
@@ -23,15 +19,6 @@ export class OperatorStoreService {
 
   save(profile: OperatorProfile): void {
     this.#profile.set({ ...profile });
-  }
-
-  update(partial: Partial<OperatorProfile>): void {
-    this.#profile.update(p => ({ ...p, ...partial }));
-  }
-
-  clear(): void {
-    localStorage.removeItem(OPERATOR_STORAGE_KEY);
-    this.#profile.set(this.#empty());
   }
 
   #load(): OperatorProfile {
