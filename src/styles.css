@@ -1,3 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+
+@theme {
+  /* Cosmic space palette */
+  --color-space-50: #f0f4f8;
+  --color-space-100: #d9e2ec;
+  --color-space-200: #bcccdc;
+  --color-space-300: #9fb3c8;
+  --color-space-400: #829ab1;
+  --color-space-500: #627d98;
+  --color-space-600: #486581;
+  --color-space-700: #334e68;
+  --color-space-800: #243b53;
+  --color-space-850: #1a2d42;
+  --color-space-900: #102a43;
+  --color-space-950: #0a1a2e;
+  --color-cosmic-950: #0a1a2e;
+
+  /* Neon accents */
+  --color-neon-cyan: #00f0ff;
+  --color-neon-green: #00ff88;
+  --color-neon-amber: #ffb224;
+  --color-neon-magenta: #ff00aa;
+
+  /* Typography */
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* Base layer */
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cosmic-950 text-space-200;
+  }
+
+  ::selection {
+    @apply bg-neon-cyan/20 text-neon-cyan;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-space-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-space-600 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-space-500;
+  }
+}

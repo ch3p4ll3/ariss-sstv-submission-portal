@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  template: `
+    <router-outlet />
+  `,
+  host: {
+    'class': 'block min-h-screen bg-cosmic-950 text-space-200 antialiased',
+  },
 })
-export class App {
-  protected readonly title = signal('sstv-gallery');
-}
+export class App {}
